@@ -173,6 +173,16 @@ defaults write com.apple.dock size-immutable -bool yes
 defaults write com.apple.dock autohide-delay -float 0
 
 # ============================================================================
+# NUMBER FORMAT
+# ============================================================================
+
+echo "[*] Number Format"
+
+# Use dots as decimal separator (instead of commas)
+# 0 = decimal separator, 1 = grouping separator
+defaults write NSGlobalDomain AppleICUNumberSymbols -dict 0 "." 1 ","
+
+# ============================================================================
 # APP STORE
 # ============================================================================
 
