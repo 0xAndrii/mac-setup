@@ -176,6 +176,15 @@ defaults write com.apple.dock size-immutable -bool yes
 defaults write com.apple.dock autohide-delay -float 0
 
 # ============================================================================
+# ANIMATIONS
+# ============================================================================
+
+echo "[*] Animations"
+
+# Speed up window resize animations
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.1
+
+# ============================================================================
 # NUMBER FORMAT
 # ============================================================================
 
