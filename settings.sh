@@ -186,6 +186,17 @@ echo "[*] Number Format"
 defaults write NSGlobalDomain AppleICUNumberSymbols -dict 0 "." 1 ","
 
 # ============================================================================
+# SAFARI
+# ============================================================================
+
+echo "[*] Safari"
+
+# Enable the Develop menu and Web Inspector
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+
+# ============================================================================
 # APP STORE
 # ============================================================================
 
