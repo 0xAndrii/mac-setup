@@ -54,6 +54,9 @@ defaults write -globalDomain NSStatusItemSpacing -int 12
 # Hide Spotlight icon (we use cmd+space anyway)
 defaults -currentHost write com.apple.Spotlight MenuItemHidden -bool true
 
+# Show time with seconds in menu bar clock
+defaults write com.apple.menuextra.clock ShowSeconds -bool true
+
 # ============================================================================
 # TRACKPAD
 # ============================================================================
